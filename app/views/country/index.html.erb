@@ -1,0 +1,19 @@
+<h1> countries <h1>
+<title>Country_Details</title>
+<table>
+  <tr>
+    <th>Country_name</th>
+    <th>country_code2</th>
+    <th>country_code3</th>
+  </tr>
+
+
+<% @res.each do |hash| %>
+  <tr>
+    <td><%= link_to hash["name"] %></td>
+    <td><%= hash["alpha2_code"] %></td>
+    <td><%= hash["alpha3_code"] %></td>
+  </tr>
+<% end %>
+
+</table>
